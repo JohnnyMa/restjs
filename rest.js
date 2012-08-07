@@ -64,7 +64,7 @@
         dTarget['on' + sEvent] = fHandler;
       }
     },
-    removeEvent: function(dTarget, sEvent, fHandler) {
+    'removeEvent': function(dTarget, sEvent, fHandler) {
       if (dTarget.removeEventListener) {
         dTarget.addEventListener(sEvent, fHandler, false);
       } else if (dTarget.attachEvent) {
